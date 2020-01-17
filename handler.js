@@ -12,7 +12,8 @@ var hbs = exphbs.create({
   defaultLayout: 'main', 
   extname: '.hbs', 
   layoutsDir: path.join(__dirname, 'views/layouts'),
-  partialsDir: path.join(__dirname, 'views/partials')
+  partialsDir: path.join(__dirname, 'views/partials'),
+  pagesDir: path.join(__dirname, 'views/pages')
 });
 
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -31,12 +32,12 @@ app.use(express.static(__dirname + '/public'));
 // Routes
 app.get("/", function(req, res) {
   res.status(200).render("index", {
-    title: 'Home Page'
+    title: 'Home'
   });
 });
 
 app.get("/about", function(req, res) {
-  res.status(200).render("about", {
+  res.status(200).render("pages/about", {
     title: 'About'
   });
 });

@@ -1,5 +1,8 @@
-h1 {
-  color: orange;
+.navbar {
+  background-color: #8dc63f;
+}
+.navbar .navbar-brand {
+  color: #000000;
 }
 
 /*# sourceMappingURL=style.css.map */
