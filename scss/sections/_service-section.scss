@@ -1,0 +1,7 @@
+.service-section {
+    background-color: $color-black;
+    padding: 20px 0;
+    @include respond-above(sm) {
+        padding: 40px 0;
+    }
+}
