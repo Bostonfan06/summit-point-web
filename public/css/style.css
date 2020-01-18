@@ -6,13 +6,16 @@
 }
 
 .service-section {
-  background-color: #000000;
+  background-color: #F4F4F4;
   padding: 20px 0;
 }
 @media (min-width: 768px) {
   .service-section {
     padding: 40px 0;
   }
+}
+.service-section h3 {
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

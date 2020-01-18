@@ -4,9 +4,12 @@ var exphbs  = require('express-handlebars');
 var express = require("express");
 var bodyParser = require("body-parser");
 var path = require('path');
+var reload = require('reload');
+var http = require('http');
 var app = express();
+var server = http.createServer(app);
 
-var port = 8080;
+app.set('port', process.env.PORT || 8080);
 
 var hbs = exphbs.create({
   defaultLayout: 'main', 
@@ -28,6 +31,7 @@ app.engine('.hbs', hbs.engine);
 
 // Serving Static Files
 app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/scss'));
 
 // Routes
 app.get("/", function(req, res) {
@@ -42,6 +46,15 @@ app.get("/about", function(req, res) {
   });
 });
 
-app.listen(port, () => console.log('Listening on port ${port}!'));
+reload(app).then(function (reloadReturned) {
+  // reloadReturned is documented in the returns API in the README
+ 
+  // Reload started, start web server
+  server.listen(app.get('port'), function () {
+    console.log('Web server listening on port ' + app.get('port'));
+  });
+}).catch(function (err) {
+  console.error('Reload could not start, could not start server/sample app', err);
+});
 
 module.exports.gallery = serverless(app);

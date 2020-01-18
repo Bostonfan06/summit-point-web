@@ -25,7 +25,10 @@
     "express-handlebars": "^3.1.0",
     "hbs": "^4.1.0",
     "node-sass": "^4.13.1",
-    "serverless-http": "^2.3.0"
+    "reload": "^3.0.4",
+    "serverless-http": "^2.3.0",
+    "uglify-js": "^3.7.5",
+    "watch": "^1.0.2"
   },
   "devDependencies": {
     "nodemon": "^1.18.4",

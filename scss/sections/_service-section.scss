@@ -1,7 +1,10 @@
 .service-section {
-    background-color: $color-black;
+    background-color: $color-tertiary;
     padding: 20px 0;
     @include respond-above(sm) {
         padding: 40px 0;
+    }
+    h3 {
+        text-align: center;
     }
 }
