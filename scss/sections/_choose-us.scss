@@ -1,0 +1,16 @@
+.choose-us-section {
+    background-color: $color-secondary;
+    padding: 10px 0;
+    @include respond-above(sm) {
+        padding: 20px 0;
+    }
+    h5 {
+        color: $color-white;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+    }
+    p {
+        color: $color-white;
+        margin-bottom: 0;
+    }
+}

@@ -3,6 +3,7 @@ var hbs = require("hbs");
 var exphbs  = require('express-handlebars');
 var express = require("express");
 var bodyParser = require("body-parser");
+var router = express.Router();
 var path = require('path');
 var reload = require('reload');
 var http = require('http');
@@ -31,7 +32,7 @@ app.engine('.hbs', hbs.engine);
 
 // Serving Static Files
 app.use(express.static(__dirname + '/public'));
-app.use(express.static(__dirname + '/scss'));
+app.use(express.static(__dirname + 'img'));
 
 // Routes
 app.get("/", function(req, res) {
@@ -43,6 +44,12 @@ app.get("/", function(req, res) {
 app.get("/about", function(req, res) {
   res.status(200).render("pages/about", {
     title: 'About'
+  });
+});
+
+app.get("/services", function(req, res) {
+  res.status(200).render("pages/services", {
+    title: 'Services'
   });
 });
 

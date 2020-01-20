@@ -1,0 +1,13 @@
+.jumbotron {
+    background-color: $color-black !important;
+    margin-bottom: 0 !important;
+    .container {
+        text-align: center;
+    }
+    h1 {
+        color: $color-white;
+    }
+    p {
+        color: $color-white;
+    }  
+}

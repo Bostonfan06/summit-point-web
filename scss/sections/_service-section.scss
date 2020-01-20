@@ -1,10 +1,26 @@
 .service-section {
-    background-color: $color-tertiary;
+    background-color: $color-black;
     padding: 20px 0;
     @include respond-above(sm) {
         padding: 40px 0;
     }
-    h3 {
-        text-align: center;
+    .service-info {
+         padding: 10px;
+         text-align: center;
+         h6 {
+             color: $color-white;
+             text-transform: uppercase;
+             letter-spacing: 5px;
+             margin-bottom: 0;
+         }
+         p {
+             color: $color-white;
+         }
     }
+}
+.yosemite-background {
+    background-image: url('/img/hero-banner.jpg');
+    background-size: cover;
+    height: 500px;
+    position: relative;
 }

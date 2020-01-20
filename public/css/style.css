@@ -1,12 +1,123 @@
+body {
+  color: #000000;
+  font-size: 16px;
+  font-family: "Poppins";
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Poppins";
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 32px;
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+
+h2 {
+  font-size: 26px;
+}
+@media (min-width: 768px) {
+  h2 {
+    font-size: 30px;
+  }
+}
+
+h3 {
+  font-size: 20px;
+}
+@media (min-width: 768px) {
+  h3 {
+    font-size: 24px;
+  }
+}
+
+h4 {
+  font-size: 16px;
+}
+@media (min-width: 768px) {
+  h4 {
+    font-size: 20px;
+  }
+}
+
+h5 {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  h5 {
+    font-size: 18px;
+  }
+}
+
+h6 {
+  font-size: 12px;
+}
+@media (min-width: 768px) {
+  h6 {
+    font-size: 16px;
+  }
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  color: #000000;
+  text-decoration: none;
+}
+
+.button {
+  color: #FFFFFF;
+  background-color: #000000;
+  padding: 10px 20px;
+  margin: 0;
+  border-radius: 10px;
+}
+.button.button-primary {
+  background-image: linear-gradient(to bottom, #8dc63f, #6d9c2c);
+}
+
 .navbar {
-  background-color: #8dc63f;
+  background-color: #F4F4F4;
 }
 .navbar .navbar-brand {
   color: #000000;
 }
 
-.service-section {
+.footer-section {
   background-color: #F4F4F4;
+  padding: 20px 0;
+}
+@media (min-width: 768px) {
+  .footer-section {
+    padding: 40px 0;
+  }
+}
+.footer-section .footer-list a:hover {
+  text-decoration: none;
+}
+.footer-section .footer-list a li {
+  list-style-type: none;
+  margin-bottom: 5px;
+}
+.footer-section .footer-list a li:last-child {
+  margin-bottom: 0;
+}
+
+.service-section {
+  background-color: #000000;
   padding: 20px 0;
 }
 @media (min-width: 768px) {
@@ -14,8 +125,58 @@
     padding: 40px 0;
   }
 }
-.service-section h3 {
+.service-section .service-info {
+  padding: 10px;
   text-align: center;
+}
+.service-section .service-info h6 {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-bottom: 0;
+}
+.service-section .service-info p {
+  color: #FFFFFF;
+}
+
+.yosemite-background {
+  background-image: url("/img/hero-banner.jpg");
+  background-size: cover;
+  height: 500px;
+  position: relative;
+}
+
+.jumbotron {
+  background-color: #000000 !important;
+  margin-bottom: 0 !important;
+}
+.jumbotron .container {
+  text-align: center;
+}
+.jumbotron h1 {
+  color: #FFFFFF;
+}
+.jumbotron p {
+  color: #FFFFFF;
+}
+
+.choose-us-section {
+  background-color: #231f20;
+  padding: 10px 0;
+}
+@media (min-width: 768px) {
+  .choose-us-section {
+    padding: 20px 0;
+  }
+}
+.choose-us-section h5 {
+  color: #FFFFFF;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.choose-us-section p {
+  color: #FFFFFF;
+  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
