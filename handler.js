@@ -3,14 +3,13 @@ var hbs = require("hbs");
 var exphbs  = require('express-handlebars');
 var express = require("express");
 var bodyParser = require("body-parser");
-var router = express.Router();
 var path = require('path');
 var reload = require('reload');
 var http = require('http');
 var app = express();
 var server = http.createServer(app);
 
-app.set('port', process.env.PORT || 8080);
+app.set('port', process.env.PORT || 3000);
 
 var hbs = exphbs.create({
   defaultLayout: 'main', 
@@ -49,6 +48,12 @@ app.get("/about", function(req, res) {
 
 app.get("/services", function(req, res) {
   res.status(200).render("pages/services", {
+    title: 'Services'
+  });
+});
+
+app.get("/contact", function(req, res) {
+  res.status(200).render("pages/contact", {
     title: 'Services'
   });
 });
