@@ -1,3 +1,7 @@
+body, html {
+    height: 100%;
+}
+
 //Color Variables
 $color-black: #000000;
 $color-white: #FFFFFF;
@@ -5,7 +9,7 @@ $color-primary: #8dc63f;
 $color-primary2: #6d9c2c;
 $color-secondary: #231f20;
 $color-tertiary: #F4F4F4;
-
+$color-tertiary2: #9ea3ab;
 //Font Variables
 $base-font-size: 16px;
 $base-font-weight: 400;
@@ -67,6 +71,17 @@ h6 {
     }
 }
 
+.body-large {
+    font-size: 32px;
+    @include respond-above(sm) {
+        font-size: 70px;
+    }
+}
+
+.page-header {
+    text-align: center;
+}
+
 a {
     &:hover {
         text-decoration: none;
@@ -83,6 +98,7 @@ ul {
 }
 //Buttons
 .button {
+    display: inline-block;
     color: $color-white;
     background-color: $color-black;
     padding: 10px 20px;

@@ -1,20 +1,19 @@
 .footer-section {
-    background-color: $color-tertiary;
+    background-color: $color-secondary;
     padding: 20px 0;
     @include respond-above(sm) {
         padding: 40px 0;
     }
     .footer-list {
-        a {
-            &:hover {
-                text-decoration: none;
-            }
-            li {
-                list-style-type: none;
-                margin-bottom: 5px;
-                &:last-child {
-                    margin-bottom: 0;
-                }
+        .h5 {
+            color: $color-white;
+        }
+        li {
+            list-style-type: none;
+            margin-bottom: 10px;
+            color: $color-white;
+            &:last-child {
+                margin-bottom: 0;
             }
         }
     }

@@ -1,0 +1,22 @@
+.what-offer-section {
+    padding: 20px 0;
+    background-color: $color-white;
+    @include respond-above(sm) {
+        padding: 40px 0;
+    }
+    h1 {
+        color: $color-secondary;
+    }
+    p {
+        color: $color-tertiary2;
+        margin-bottom: 30px;
+    }
+    .mission-content {
+        @include respond-below(sm) {
+            margin-bottom: 30px;
+        }
+        .h4 {
+            color: $color-secondary;
+        }
+    }
+}

@@ -1,13 +1,40 @@
-.jumbotron {
-    background-color: $color-black !important;
-    margin-bottom: 0 !important;
-    .container {
-        text-align: center;
+.bg {
+    /* The image used */
+    background-image: url('/img/peak.jpg');
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        left: 0; right: 0;
+        top: 0; bottom: 0;
+        background: rgba(0,0,0,0.7);
     }
+    .hero-text {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        .body-large {
+            color: $color-white;
+            margin-bottom: 0;
+        }
+        .h5 {
+            color: $color-white;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.jumbotron {
+    background-color: $color-secondary !important;
     h1 {
         color: $color-white;
     }
-    p {
-        color: $color-white;
-    }  
 }

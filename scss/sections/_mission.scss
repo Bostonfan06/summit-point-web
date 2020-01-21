@@ -1,0 +1,22 @@
+.mission-section {
+    padding: 20px 0;
+    background-color: $color-secondary;
+    @include respond-above(sm) {
+        padding: 40px 0;
+    }
+    h1 {
+        color: $color-white;
+    }
+    p {
+        color: $color-tertiary2;
+        margin-bottom: 30px;
+    }
+    .mission-content {
+        @include respond-below(sm) {
+            margin-bottom: 30px;
+        }
+        .h4 {
+            color: $color-white;
+        }
+    }
+}
