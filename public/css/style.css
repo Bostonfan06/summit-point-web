@@ -111,10 +111,13 @@ ul li {
   background-color: #000000;
   padding: 10px 20px;
   margin: 0;
-  border-radius: 10px;
 }
 .button.button-primary {
   background-image: linear-gradient(to bottom, #8dc63f, #6d9c2c);
+  border-radius: 10px;
+}
+.button.button-secondary {
+  background-image: linear-gradient(to bottom, #000000, #231f20);
 }
 
 .navbar {
@@ -211,6 +214,7 @@ ul li {
 
 .jumbotron {
   background-color: #231f20 !important;
+  margin-bottom: 0 !important;
 }
 .jumbotron h1 {
   color: #FFFFFF;
@@ -241,25 +245,14 @@ ul li {
 }
 @media (min-width: 768px) {
   .all-services {
-    padding: 40px 0;
+    padding: 30px 0;
   }
 }
-.all-services .title-box {
-  border-radius: 10px;
-  line-height: 200px;
-  height: 200px;
-  margin-bottom: 30px;
-  box-shadow: -1px 9px 18px 0 rgba(75, 81, 91, 0.1);
-  background-color: #FFFFFF;
+.all-services .title-box img {
+  width: 100%;
 }
-.all-services .title-box .content-box {
-  display: inline-block;
-  line-height: 1.5;
-  vertical-align: middle;
-  text-align: center;
-}
-.all-services .title-box .content-box h3 {
-  color: #000000;
+.all-services .title-box ul li {
+  list-style-type: none;
 }
 
 .mission-section {
@@ -310,6 +303,116 @@ ul li {
 }
 .what-offer-section .mission-content .h4 {
   color: #231f20;
+}
+
+.know-us-section {
+  padding: 20px 0;
+  background-color: #8dc63f;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .know-us-section {
+    padding: 40px 0;
+  }
+}
+.know-us-section .h6 {
+  color: #FFFFFF;
+}
+.know-us-section .h3 {
+  color: #FFFFFF;
+}
+
+.the-company-section {
+  padding: 20px 0;
+}
+@media (min-width: 768px) {
+  .the-company-section {
+    padding: 40px 0;
+  }
+}
+
+.process-section {
+  padding-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .process-section {
+    padding-bottom: 40px;
+  }
+}
+.process-section .col-lg-4 {
+  padding: 0;
+}
+.process-section .box-fancy {
+  padding: 5% !important;
+}
+
+.our-team-section h2 {
+  text-align: center;
+}
+.our-team-section .team-member {
+  max-width: 200px;
+  height: auto;
+  background-color: #fff;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #eee;
+  box-shadow: 0 3px 16px rgba(0, 0, 0, 0.07);
+}
+.our-team-section .team-member .team-desc {
+  padding: 20px;
+}
+.our-team-section .team-member .team-desc .member-name {
+  margin-bottom: 0;
+}
+.our-team-section .team-member .team-desc .member-title {
+  margin-bottom: 0;
+}
+.our-team-section img {
+  width: 100%;
+}
+
+.contact-section .contact-jumbo {
+  background: url("/img/peak.jpg");
+  background-size: cover;
+  min-height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.contact-section .contact-jumbo::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.9);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.contact-section .contact-jumbo .contact-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.contact-section .contact-jumbo .contact-text .h3 {
+  color: #FFFFFF;
+  text-align: center;
+}
+.contact-section .contact-jumbo .contact-text p {
+  color: #FFFFFF;
+  text-align: center;
+}
+.contact-section .contact-info {
+  padding: 20px 0;
+}
+@media (min-width: 768px) {
+  .contact-section .contact-info {
+    padding: 40px 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

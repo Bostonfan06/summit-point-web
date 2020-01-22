@@ -1,0 +1,52 @@
+.the-company-section {
+    padding: 20px 0;
+    @include respond-above(sm) {
+        padding: 40px 0;
+    }
+}
+
+// Process
+.process-section {
+    padding-bottom: 20px;
+    @include respond-above(sm) {
+        padding-bottom: 40px;
+    }
+    .col-lg-4 {
+        padding: 0;
+    }
+    .box-fancy {
+        padding: 5% !important;
+    }
+}
+
+// Our Team Members
+.our-team-section {
+    h2 {
+        text-align: center;
+    }
+    .team-member {
+        max-width: 200px;
+        height: auto;
+        background-color: #fff;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        margin: auto;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        border: 1px solid #eee;
+        box-shadow: 0 3px 16px rgba(0,0,0,.07);
+        .team-desc {
+            padding: 20px;
+            .member-name {
+                margin-bottom: 0;
+            }
+            .member-title {
+                margin-bottom: 0;
+            }
+        }
+    }
+    img {
+        width: 100%;
+    }
+}

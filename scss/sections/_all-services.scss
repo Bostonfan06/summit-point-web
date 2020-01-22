@@ -2,22 +2,15 @@
     padding: 20px;
     background-color: $color-tertiary;
     @include respond-above(sm) {
-        padding: 40px 0;
+        padding: 30px 0;
     }
     .title-box {
-        border-radius: 10px;
-        line-height: 200px;
-        height: 200px;
-        margin-bottom: 30px;
-        box-shadow: -1px 9px 18px 0 rgba(75,81,91,.1);
-        background-color: $color-white;
-        .content-box {
-            display: inline-block;
-            line-height: 1.5;
-            vertical-align: middle;
-            text-align: center;
-            h3 {
-                color: $color-black;
+        img {
+            width: 100%;
+        }
+        ul {
+            li {
+                list-style-type: none;
             }
         }
     }  

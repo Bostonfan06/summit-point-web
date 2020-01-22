@@ -1,0 +1,14 @@
+.know-us-section {
+    padding: 20px 0;
+    background-color: $color-primary;
+    text-align: center;
+    @include respond-above(sm) {
+        padding: 40px 0;
+    }
+    .h6 {
+        color: $color-white;
+    }
+    .h3 {
+        color: $color-white;
+    }
+}

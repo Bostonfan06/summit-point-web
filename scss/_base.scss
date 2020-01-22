@@ -103,11 +103,15 @@ ul {
     background-color: $color-black;
     padding: 10px 20px;
     margin: 0;
-    border-radius: 10px;
     &.button-primary {
-        background-image: linear-gradient( to bottom, $color-primary, $color-primary2 )
+        background-image: linear-gradient( to bottom, $color-primary, $color-primary2 );
+        border-radius: 10px;
+    }
+    &.button-secondary {
+        background-image: linear-gradient( to bottom, $color-black, $color-secondary );
     }
 }
+
 //Mixins
 @mixin clearfix() {
     &::after {
