@@ -7,13 +7,19 @@
     .footer-list {
         .h5 {
             color: $color-white;
+            margin-bottom: 15px;
         }
-        li {
-            list-style-type: none;
-            margin-bottom: 10px;
-            color: $color-white;
-            &:last-child {
-                margin-bottom: 0;
+        ul {
+            li {
+                list-style-type: none;
+                margin-bottom: 10px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                > a {
+                    color: $color-white;
+                    text-decoration: none;
+                }
             }
         }
     }

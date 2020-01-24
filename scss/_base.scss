@@ -31,6 +31,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     font-size: 32px;
+    font-family: $header-font-family;
     @include respond-above(sm) {
         font-size: 40px;
     }
@@ -79,7 +80,40 @@ h6 {
 }
 
 .page-header {
-    text-align: center;
+    background: url('/img/peak.jpg');
+    background-size: cover;
+    min-height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-attachment: fixed;
+    &::before {
+        content: "";
+        position: absolute;
+        background-color: rgba(0,0,0,0.7);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    .base-text { 
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        h1 {
+            color: $color-white;
+            margin-bottom: 0;
+        }
+        .h3 {
+            color: $color-white;
+            text-align: center;
+        }
+        p  {
+            color: $color-white;
+            text-align: center;
+        }
+    }
 }
 
 a {

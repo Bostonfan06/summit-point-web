@@ -16,6 +16,15 @@
     }
     .box-fancy {
         padding: 5% !important;
+        h1 {
+            color: $color-white;
+        }
+        .h3 {
+            color: $color-white;
+        }
+        span {
+            color: $color-white;
+        }
     }
 }
 

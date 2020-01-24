@@ -27,6 +27,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 32px;
+  font-family: "Impact";
 }
 @media (min-width: 768px) {
   h1 {
@@ -89,6 +90,39 @@ h6 {
 }
 
 .page-header {
+  background: url("/img/peak.jpg");
+  background-size: cover;
+  min-height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  background-attachment: fixed;
+}
+.page-header::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.page-header .base-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.page-header .base-text h1 {
+  color: #FFFFFF;
+  margin-bottom: 0;
+}
+.page-header .base-text .h3 {
+  color: #FFFFFF;
+  text-align: center;
+}
+.page-header .base-text p {
+  color: #FFFFFF;
   text-align: center;
 }
 
@@ -138,14 +172,18 @@ ul li {
 }
 .footer-section .footer-list .h5 {
   color: #FFFFFF;
+  margin-bottom: 15px;
 }
-.footer-section .footer-list li {
+.footer-section .footer-list ul li {
   list-style-type: none;
   margin-bottom: 10px;
-  color: #FFFFFF;
 }
-.footer-section .footer-list li:last-child {
+.footer-section .footer-list ul li:last-child {
   margin-bottom: 0;
+}
+.footer-section .footer-list ul li > a {
+  color: #FFFFFF;
+  text-decoration: none;
 }
 
 .service-section {
@@ -345,6 +383,15 @@ ul li {
 .process-section .box-fancy {
   padding: 5% !important;
 }
+.process-section .box-fancy h1 {
+  color: #FFFFFF;
+}
+.process-section .box-fancy .h3 {
+  color: #FFFFFF;
+}
+.process-section .box-fancy span {
+  color: #FFFFFF;
+}
 
 .our-team-section h2 {
   text-align: center;
@@ -375,37 +422,6 @@ ul li {
   width: 100%;
 }
 
-.contact-section .contact-jumbo {
-  background: url("/img/peak.jpg");
-  background-size: cover;
-  min-height: 300px;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
-}
-.contact-section .contact-jumbo::before {
-  content: "";
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.9);
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-.contact-section .contact-jumbo .contact-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.contact-section .contact-jumbo .contact-text .h3 {
-  color: #FFFFFF;
-  text-align: center;
-}
-.contact-section .contact-jumbo .contact-text p {
-  color: #FFFFFF;
-  text-align: center;
-}
 .contact-section .contact-info {
   padding: 20px 0;
 }

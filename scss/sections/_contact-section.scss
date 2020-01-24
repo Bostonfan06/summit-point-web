@@ -1,39 +1,13 @@
 .contact-section {
-    .contact-jumbo {
-        background: url('/img/peak.jpg');
-        background-size: cover;
-        min-height: 300px;
-        background-position: center;
-        background-repeat: no-repeat;
-        position: relative;
-        &::before {
-            content: "";
-            position: absolute;
-            background-color: rgba(0,0,0,0.9);
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-        }
-        .contact-text { 
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            .h3 {
-                color: $color-white;
-                text-align: center;
-            }
-            p   {
-                color: $color-white;
-                text-align: center;
-            }
-        }
-    }
     .contact-info {
         padding: 20px 0;
         @include respond-above(sm) {
             padding: 40px 0;
         }
     }
+}
+
+//About Section 
+.about-page-section {
+
 }
