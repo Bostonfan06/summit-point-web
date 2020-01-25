@@ -3,6 +3,10 @@
     @include respond-above(sm) {
         padding: 40px 0;
     }
+    img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 // Process
@@ -30,6 +34,10 @@
 
 // Our Team Members
 .our-team-section {
+    padding-bottom: 20px;
+    @include respond-above(sm) {
+        padding-bottom: 40px;
+    }
     h2 {
         text-align: center;
     }

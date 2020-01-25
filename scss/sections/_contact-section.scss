@@ -1,4 +1,7 @@
 .contact-section {
+    .base-text {
+        text-align: center;
+    }
     .contact-info {
         padding: 20px 0;
         @include respond-above(sm) {

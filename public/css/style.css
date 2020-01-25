@@ -368,6 +368,10 @@ ul li {
     padding: 40px 0;
   }
 }
+.the-company-section img {
+  width: 100%;
+  height: auto;
+}
 
 .process-section {
   padding-bottom: 20px;
@@ -393,6 +397,14 @@ ul li {
   color: #FFFFFF;
 }
 
+.our-team-section {
+  padding-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .our-team-section {
+    padding-bottom: 40px;
+  }
+}
 .our-team-section h2 {
   text-align: center;
 }
@@ -422,6 +434,9 @@ ul li {
   width: 100%;
 }
 
+.contact-section .base-text {
+  text-align: center;
+}
 .contact-section .contact-info {
   padding: 20px 0;
 }
