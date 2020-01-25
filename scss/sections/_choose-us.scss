@@ -1,8 +1,10 @@
 .choose-us-section {
     background-color: $color-secondary;
     padding: 10px 0;
+    margin-bottom: 10px;
     @include respond-above(sm) {
         padding: 20px 0;
+        margin-bottom: 20px;
     }
     h5 {
         color: $color-white;
@@ -12,5 +14,8 @@
     p {
         color: $color-white;
         margin-bottom: 0;
+        > strong {
+            color: $color-primary;
+        }
     }
 }

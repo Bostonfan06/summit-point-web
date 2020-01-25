@@ -1,15 +1,14 @@
 .what-offer-section {
-    padding: 20px 0;
+    padding: 10px 0;
     background-color: $color-white;
     @include respond-above(sm) {
-        padding: 40px 0;
+        padding: 30px 0;
     }
-    h1 {
+    h2 {
         color: $color-secondary;
     }
     p {
         color: $color-tertiary2;
-        margin-bottom: 30px;
     }
     .mission-content {
         @include respond-below(sm) {
@@ -17,6 +16,7 @@
         }
         .h4 {
             color: $color-secondary;
+            font-family: $header-font-family;
         }
     }
 }

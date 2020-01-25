@@ -187,26 +187,45 @@ ul li {
 }
 
 .service-section {
-  background-color: #000000;
-  padding: 20px 0;
+  background-color: #FFFFFF;
+  margin-bottom: 10px;
 }
 @media (min-width: 768px) {
   .service-section {
-    padding: 40px 0;
+    margin-bottom: 20px;
   }
 }
+.service-section .h1 {
+  margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+  .service-section .h1 {
+    margin-bottom: 30px;
+  }
+}
+.service-section .h1 > strong {
+  color: #8dc63f;
+}
 .service-section .service-info {
-  padding: 10px;
   text-align: center;
+  padding: 50px 25px;
+  background-color: #F4F4F4;
+  margin-bottom: 30px;
+}
+@media (max-width: 767px) {
+  .service-section .service-info {
+    margin-bottom: 10px;
+  }
 }
 .service-section .service-info .h6 {
-  color: #FFFFFF;
+  color: #231f20;
+  font-family: "Impact";
   text-transform: uppercase;
   letter-spacing: 5px;
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
-.service-section .service-info p {
-  color: #FFFFFF;
+.service-section .service-info ul li {
+  list-style-type: none;
 }
 
 .yosemite-background {
@@ -226,6 +245,7 @@ ul li {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  background-attachment: fixed;
 }
 .bg::before {
   content: "";
@@ -261,10 +281,12 @@ ul li {
 .choose-us-section {
   background-color: #231f20;
   padding: 10px 0;
+  margin-bottom: 10px;
 }
 @media (min-width: 768px) {
   .choose-us-section {
     padding: 20px 0;
+    margin-bottom: 20px;
   }
 }
 .choose-us-section h5 {
@@ -275,6 +297,9 @@ ul li {
 .choose-us-section p {
   color: #FFFFFF;
   margin-bottom: 0;
+}
+.choose-us-section p > strong {
+  color: #8dc63f;
 }
 
 .all-services {
@@ -319,20 +344,19 @@ ul li {
 }
 
 .what-offer-section {
-  padding: 20px 0;
+  padding: 10px 0;
   background-color: #FFFFFF;
 }
 @media (min-width: 768px) {
   .what-offer-section {
-    padding: 40px 0;
+    padding: 30px 0;
   }
 }
-.what-offer-section h1 {
+.what-offer-section h2 {
   color: #231f20;
 }
 .what-offer-section p {
   color: #9ea3ab;
-  margin-bottom: 30px;
 }
 @media (max-width: 767px) {
   .what-offer-section .mission-content {
@@ -341,6 +365,7 @@ ul li {
 }
 .what-offer-section .mission-content .h4 {
   color: #231f20;
+  font-family: "Impact";
 }
 
 .know-us-section {
