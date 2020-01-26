@@ -30,8 +30,8 @@ app.set('view engine', '.hbs');
 app.engine('.hbs', hbs.engine); 
 
 // Serving Static Files
-app.use(express.static(__dirname + '/public'))
-app.use(express.static(__dirname + '/img'))
+app.use(express.static('public'))
+app.use(express.static('img'))
 
 // Routes
 app.get("/", function(req, res) {

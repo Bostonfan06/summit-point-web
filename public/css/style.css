@@ -126,10 +126,6 @@ h6 {
   text-align: center;
 }
 
-a:hover {
-  text-decoration: none;
-}
-
 ul {
   padding: 0;
   margin: 0;
@@ -156,20 +152,50 @@ ul li {
 }
 
 .navbar {
-  background-color: #8dc63f;
+  background-color: #000000 !important;
 }
-.navbar .navbar-brand {
-  color: #000000;
+.navbar img {
+  width: 20%;
+}
+.navbar i {
+  color: #FFFFFF;
+}
+.navbar .nav-item {
+  font-family: "Impact";
+  text-align: right;
+}
+.navbar a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.navbar a:hover {
+  color: #8dc63f;
+}
+.navbar .navbar-toggler {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid #FFFFFF;
+  border-radius: 0.25rem;
 }
 
 .footer-section {
-  background-color: #231f20;
+  background-color: #000000;
   padding: 20px 0;
 }
 @media (min-width: 768px) {
   .footer-section {
     padding: 40px 0;
   }
+}
+@media (max-width: 767px) {
+  .footer-section {
+    text-align: center;
+  }
+}
+.footer-section .footer-info {
+  color: #FFFFFF;
 }
 .footer-section .footer-list .h5 {
   color: #FFFFFF;
@@ -185,6 +211,9 @@ ul li {
 .footer-section .footer-list ul li > a {
   color: #FFFFFF;
   text-decoration: none;
+}
+.footer-section .copyright {
+  color: #FFFFFF;
 }
 
 .service-section {
@@ -236,7 +265,7 @@ ul li {
 
 .bg {
   /* The image used */
-  background-image: url("/img/peak.jpg");
+  background-image: url("../img/peak.jpg");
   /* Full height */
   height: 100%;
   /* Center and scale the image nicely */
@@ -371,6 +400,11 @@ ul li {
   .what-offer-section .mission-content {
     margin-bottom: 30px;
   }
+}
+.what-offer-section .mission-content i {
+  font-size: 40px;
+  color: #8dc63f;
+  margin-bottom: 10px;
 }
 .what-offer-section .mission-content .h4 {
   color: #231f20;

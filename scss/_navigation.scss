@@ -1,6 +1,28 @@
 .navbar {
-    background-color: $color-primary;
-    .navbar-brand {
-        color: $color-black;
+    background-color: $color-black !important;
+    img {
+        width: 20%;
+    }
+    i {
+        color: $color-white;
+    }
+    .nav-item {
+        font-family: $header-font-family;
+        text-align: right;
+    }
+    a {
+        color: $color-white;
+        text-decoration: none;
+        &:hover {
+            color: $color-primary;
+        }
+    }
+    .navbar-toggler {
+        padding: .25rem .75rem;
+        font-size: 1.25rem;
+        line-height: 1;
+        background-color: transparent;
+        border: 1px solid $color-white;
+        border-radius: .25rem;
     }
 }

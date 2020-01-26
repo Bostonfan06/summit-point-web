@@ -1,8 +1,14 @@
 .footer-section {
-    background-color: $color-secondary;
+    background-color: $color-black;
     padding: 20px 0;
     @include respond-above(sm) {
         padding: 40px 0;
+    }
+    @include respond-below(sm) {
+        text-align: center;
+    }
+    .footer-info {
+        color: $color-white;
     }
     .footer-list {
         .h5 {
@@ -22,5 +28,8 @@
                 }
             }
         }
+    }
+    .copyright {
+        color: $color-white;
     }
 }
