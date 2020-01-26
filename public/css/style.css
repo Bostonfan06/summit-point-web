@@ -145,10 +145,11 @@ ul li {
   background-color: #000000;
   padding: 10px 20px;
   margin: 0;
+  border-radius: 20px;
 }
 .button.button-primary {
   background-image: linear-gradient(to bottom, #8dc63f, #6d9c2c);
-  border-radius: 10px;
+  border-radius: 20px;
 }
 .button.button-secondary {
   background-image: linear-gradient(to bottom, #000000, #231f20);
@@ -195,16 +196,14 @@ ul li {
     margin-bottom: 20px;
   }
 }
-.service-section .h1 {
-  margin-bottom: 10px;
-}
-@media (min-width: 768px) {
-  .service-section .h1 {
-    margin-bottom: 30px;
-  }
-}
-.service-section .h1 > strong {
+.service-section h1 > strong {
   color: #8dc63f;
+}
+.service-section hr {
+  width: 100px;
+  height: 1px;
+  background-color: #8dc63f;
+  margin-left: 0;
 }
 .service-section .service-info {
   text-align: center;
@@ -264,6 +263,7 @@ ul li {
 .bg .hero-text .body-large {
   color: #FFFFFF;
   margin-bottom: 0;
+  font-family: "Bebas Neue";
 }
 .bg .hero-text .h5 {
   color: #FFFFFF;
@@ -300,6 +300,15 @@ ul li {
 }
 .choose-us-section p > strong {
   color: #8dc63f;
+}
+
+.about-us-section {
+  padding: 10px 0;
+}
+@media (min-width: 768px) {
+  .about-us-section {
+    padding: 30px 0;
+  }
 }
 
 .all-services {
@@ -344,12 +353,12 @@ ul li {
 }
 
 .what-offer-section {
-  padding: 10px 0;
-  background-color: #FFFFFF;
+  padding: 20px 0;
+  background-color: #F4F4F4;
 }
 @media (min-width: 768px) {
   .what-offer-section {
-    padding: 30px 0;
+    padding: 50px 0;
   }
 }
 .what-offer-section h2 {
@@ -469,6 +478,13 @@ ul li {
   .contact-section .contact-info {
     padding: 40px 0;
   }
+}
+
+.about-us-section hr {
+  width: 100px;
+  height: 1px;
+  background-color: #8dc63f;
+  margin-left: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

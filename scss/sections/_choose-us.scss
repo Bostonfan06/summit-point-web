@@ -19,3 +19,11 @@
         }
     }
 }
+
+// About Us
+.about-us-section {
+    padding: 10px 0;
+    @include respond-above(sm) {
+        padding: 30px 0;
+    }
+}

@@ -4,14 +4,16 @@
     @include respond-above(sm) {
         margin-bottom: 20px;
     }
-    .h1 {
-        margin-bottom: 10px;
-        @include respond-above(sm) {
-        margin-bottom: 30px;
-        }
+    h1 {
         > strong {
             color: $color-primary;
         }
+    }
+    hr {
+        width: 100px;
+        height: 1px;
+        background-color: $color-primary;
+        margin-left: 0;
     }
     .service-info {
          text-align: center;

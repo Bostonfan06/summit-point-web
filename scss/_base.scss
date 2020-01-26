@@ -15,6 +15,7 @@ $base-font-size: 16px;
 $base-font-weight: 400;
 $base-font-family: 'Poppins';
 $header-font-family: 'Impact';
+$title-font-family: 'Bebas Neue';
 
 body {
     color: $color-black;
@@ -137,9 +138,10 @@ ul {
     background-color: $color-black;
     padding: 10px 20px;
     margin: 0;
+    border-radius: 20px;
     &.button-primary {
         background-image: linear-gradient( to bottom, $color-primary, $color-primary2 );
-        border-radius: 10px;
+        border-radius: 20px;
     }
     &.button-secondary {
         background-image: linear-gradient( to bottom, $color-black, $color-secondary );

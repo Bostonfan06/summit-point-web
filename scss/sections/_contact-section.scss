@@ -11,6 +11,11 @@
 }
 
 //About Section 
-.about-page-section {
-
+.about-us-section {
+    hr {
+        width: 100px;
+        height: 1px;
+        background-color: $color-primary;
+        margin-left: 0;
+    }
 }
